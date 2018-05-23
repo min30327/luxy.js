@@ -1,35 +1,35 @@
 {
   "_args": [
     [
-      "luxy.js@0.0.2",
-      "/Users/mineo/workspace/demo-dir/luxy/"
+      "luxy.js@0.1.0",
+      "/Users/mineo/workspace/DEMO/luxy.js/"
     ]
   ],
-  "_from": "luxy.js@0.0.1",
-  "_id": "luxy.js@0.0.1",
+  "_from": "luxy.js@0.1.0",
+  "_id": "luxy.js@0.1.0",
   "_inBundle": false,
   "_location": "/luxy.js",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "luxy.js@0.0.1",
+    "raw": "luxy.js@0.1.0",
     "name": "luxy.js",
     "escapedName": "luxy.js",
-    "rawSpec": "0.0.1",
+    "rawSpec": "0.1.0",
     "saveSpec": null,
-    "fetchSpec": "0.0.1"
+    "fetchSpec": "0.1.0"
   },
   "_requiredBy": [
     "/"
   ],
-  "_spec": "0.0.1",
-  "_where": "/Users/mineo/workspace/demo-dir/luxy.js/",
+  "_spec": "0.1.0",
+  "_where": "/Users/mineo/workspace/DEMO/luxy.js/",
   "author": {
     "name": "Mineo Okuda",
     "url": "https://www.willstyle.co.jp"
   },
-  "description": "Animate scrolling to anchor links",
+  "description": "Inertia scroll and parallax effect plugin in Vanilla.js",
   "devDependencies": {
     "del": "^2.2.2",
     "gulp": "^3.9.1",
@@ -57,7 +57,7 @@
   "name": "luxy.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:min30327/luxy.git"
+    "url": "git+ssh://git@github.com:min30327/luxy.js.git"
   },
-  "version": "0.0.7"
+  "version": "0.1.0"
 }

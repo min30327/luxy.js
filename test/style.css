@@ -60,6 +60,16 @@ html,body{
     background-color: #FFF;
     color: #333;
 }
+.btn-ghost{
+    border: 1px solid #fff;
+    color: #FFF;
+}
+.btn-ghost:hover{
+    text-decoration: none;
+    background: #080126;
+    border-color: #080126;
+    color: #FFF;
+}
 #section01{
     position: relative;
     z-index: 2;

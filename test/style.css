@@ -1,0 +1,150 @@
+html{
+	font-size: 18px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+@media(max-width: 767px){
+	html{
+		font-size: 12px;
+	}
+}
+html,body{
+    width: 100%;
+    -ms-overflow-x: hidden;
+        overflow-x: hidden;
+}
+
+#main{
+	background: #080126;
+	color: #fff;
+   
+}
+
+
+
+.bg-section{
+	position: absolute;
+    left: 0;
+    top: 0;
+	width: 100%;
+	height: 100vh;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+
+#bg-section01{
+    background-image: url('img/img01.jpg');
+}
+#bg-section02{
+    background-image: url('img/img02.jpg');
+}
+#bg-section03{
+    background-image: url('img/img03.jpg');
+    top: 30vh;
+}
+.oleo{
+    
+    font-family: 'Oleo Script', curs;
+}
+.title{
+    letter-spacing: 4px;   
+}
+.z-depth-2{
+    position: relative;
+    z-index: 2;
+}
+.table{
+    background-color: #FFF;
+    color: #333;
+}
+#section01{
+    position: relative;
+    z-index: 2;
+    padding: 45vh 0;
+}
+#section01 .content-inner{
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+#section01 .inner-el{
+    font-size: 4rem;
+    position: relative;
+    text-align: center;
+    padding: 0 10px;
+    max-width:50px;
+}
+@media(max-width: 767px){
+    #section01 .inner-el{
+        padding: 0 10px; 
+        font-size: 3rem;
+    }
+}
+
+
+#section02{
+    background: #080126;
+    position: relative;
+    z-index: 4;
+    padding:10vh 0;
+}
+#fog01{
+    position: absolute;
+    bottom: -30vh;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+#fog01 img{
+    width: 100%;
+}
+#section03{
+    position: relative;
+    z-index: 3;
+    padding: 50vh 0 0;
+    background: #080126;
+    overflow: hidden;
+}
+#fog02{
+    position: absolute;
+    bottom: -50vh;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+#fog02 img{
+    width: 100%;
+}
+#section04{
+    position: relative;
+    background: #080126;
+    z-index: 3;
+    padding: 10vh 0;
+}
+#section05{
+    position: relative;
+    z-index: 3;
+    padding: 50vh 0 0;
+    background: #080126;
+    overflow: hidden;
+}
+#section06{
+    position: relative;
+    background: #080126;
+    z-index: 3;
+    padding: 10vh 0;
+}
+
+#footer{
+    color: #FFF;
+    padding: 50px 20px;
+    font-size: 12px;
+    text-align: center;
+    background: #000;
+}

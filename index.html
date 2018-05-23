@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Luxy.js｜Inertia scroll and parallax effect plugin in Vanilla.js</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="robots" content="index,follow">
+	<link href="https://fonts.googleapis.com/css?family=Oleo+Script|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="test/style.css">
+    <link rel="stylesheet" href="test/prittyprint.css">
+</head>
+<body>
+	<div id="luxy">
+		
+		<main id="main">
+            <div id="section01">
+                <div id="bg-section01" class="luxy-el bg-section" data-speed-y="40"></div>
+				<div class="content-inner">
+					<div class="d-flex justify-content-center oleo">
+						<div class="luxy-el inner-el" data-horizontal="1" data-speed-x="-12">L</div>
+						<div class="luxy-el inner-el" data-horizontal="1" data-speed-x="-6">u</div>
+						<div class="luxy-el inner-el" data-horizontal="1" data-speed-x="-3">x</div>
+						<div class="luxy-el inner-el" data-horizontal="1" data-speed-x="0">y</div>
+						<div class="luxy-el inner-el" data-horizontal="1" data-speed-x="3">.</div>
+						<div class="luxy-el inner-el" data-horizontal="1" data-speed-x="6">j</div>
+						<div class="luxy-el inner-el" data-horizontal="1" data-speed-x="12">s</div>
+					</div>
+                    <div class="text-center">
+                        <p>Inertia scroll and parallax effect plugin in Vanilla.jss</p>
+                    </div>
+				</div>
+			</div>
+			<div id="section02">
+                <div class="container z-depth-2">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h3 class="oleo title text-center mb-3">Installation</h3>
+                            <p>You can install it using npm:</p>
+                            <div class="code-print">
+                                <pre class="prettyprint linenums"><code class="language-html">npm install luxy.js --save</code></pre>
+                            </div>
+                            <p>Or just include the script in your page:</p>
+                            <div class="code-print">
+                                <pre class="prettyprint linenums"><code class="language-html">&lt;script src=&quot;path/to/luxy.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</code></pre>
+                            </div>
+                            <p>Included luxy.js in your project and initialize:</p>
+                            <div class="code-print">
+<pre  class="prettyprint linenums">
+<code class="language-html">&lt;script charset=&quot;utf-8&quot;&gt;
+    luxy.init();
+&lt;/script&gt;</code>
+</pre>
+</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="fog01" class="luxy-el" data-speed-y="-5">
+                    <img src="test/img/fog01.png" alt="fog">
+                </div>
+            </div>
+			<div id="section03">
+                <div id="bg-section02" class="luxy-el bg-section" data-speed-y="-10"></div>
+            </div>
+            <div id="section04">
+
+                <div id="fog02" class="luxy-el" data-speed-y="-5">
+                    <img src="test/img/fog01.png" alt="fog02">
+                </div>
+                <div class="container z-depth-2">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h3 class="oleo title text-center mb-3">Usage</h3>
+                            <p>Wrap the entire content with the element specified in the wrapper option. Please exclude fixed elements.</p>
+                            <div class="code-print">
+<pre  class="prettyprint linenums">
+<code class="language-html">&lt;div id=&quot;luxy&quot;&gt;
+    ... Entire content
+&lt;/div&gt;</code>
+</pre>
+</div>
+                            <p>Add .luxy-el to the element for which parallax effect is to be specified.</p>
+                            <div class="code-print"><pre  class="prettyprint linenums"><code class="language-html">&lt;div id=&quot;luxy&quot;&gt;
+    &lt;div class=&quot;luxy-el&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre></div>
+                            <p>Specify the speed of the parallax effect with the data-speed-y attribute and offset with the data-offset attribute.</p>
+                            <div class="code-print"><pre  class="prettyprint linenums"><code class="language-html">&lt;div id=&quot;luxy&quot;&gt;
+    &lt;div class=&quot;luxy-el&quot; data-speed-y=&quot;5&quot; data-offset=&quot;-50&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre></div>
+                            <p>If you want to move horizontally, specify data-horizontal="1" and specify the speed in the horizontal direction with the data-speed-x attribute.</p>
+                            <div class="code-print"><pre  class="prettyprint linenums"><code class="language-html">&lt;div id=&quot;luxy&quot;&gt;
+    &lt;div class=&quot;luxy-el&quot; data-horizontal=&quot;1&quot; data-speed-x=&quot;-5&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="section05">
+                <div id="bg-section03" class="luxy-el bg-section" data-speed-y="-10"></div>
+            </div>
+            <div id="section06">
+                <div class="container z-depth-2">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h3 class="oleo title text-center mb-3">Options</h3>
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>default</th>
+                                        <th>description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>wrapper</th>
+                                        <td>'#luxy'</td>
+                                        <td>Entire content wrapper element.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>targets</th>
+                                        <td>'.luxy-el'</td>
+                                        <td>Parallax effect targets elements.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>wrapperSpeed</th>
+                                        <td>0.08</td>
+                                        <td>Inertia scroll speed.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</main>
+		<footer id="footer">
+            <div id="copyright">
+                Luxy.js © 2018 Mineo Okuda. released under MIT license
+            </div>      
+        </footer>
+	</div>
+	<script src="https://rawgit.com/google/code-prettify/master/loader/run_prettify.js" defer></script>
+	<script src="dist/js/luxy.js" charset="utf-8"></script>
+	<script>
+		luxy.init({
+			wrapper: '#luxy',
+			targets : '.luxy-el',
+			wrapperSpeed:  0.08
+		});
+	</script>
+</body>
+</html>

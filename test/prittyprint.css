@@ -1,0 +1,121 @@
+/*! Color themes for Google Code Prettify | MIT License | github.com/jmblog/color-themes-for-google-code-prettify */
+pre.prettyprint {
+  background: #002451;
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
+  border: 0 !important;
+  font-size: 0.8rem;
+  padding: 10px !important;
+}
+
+pre.prettyprint .pln {
+  color: #ffffff;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+pre.prettyprint  ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #7285b7;
+}
+
+pre.prettyprint li.L0,
+pre.prettyprint li.L1,
+pre.prettyprint li.L2,
+pre.prettyprint li.L3,
+pre.prettyprint li.L4,
+pre.prettyprint li.L5,
+pre.prettyprint li.L6,
+pre.prettyprint li.L7,
+pre.prettyprint li.L8,
+pre.prettyprint li.L9 {
+  padding-left: 1em;
+  background-color: #002451;
+  list-style-type: decimal;
+}
+
+@media screen {
+
+  /* string content */
+
+  pre.prettyprint .str {
+    color: #d1f1a9;
+  }
+
+  /* keyword */
+
+  pre.prettyprint .kwd {
+    color: #ebbbff;
+  }
+
+  /* comment */
+
+  pre.prettyprint .com {
+    color: #7285b7;
+  }
+
+  /* type name */
+
+  pre.prettyprint .typ {
+    color: #bbdaff;
+  }
+
+  /* literal value */
+
+  pre.prettyprint .lit {
+    color: #ffc58f;
+  }
+
+  /* punctuation */
+
+  pre.prettyprint .pun {
+    color: #ffffff;
+  }
+
+  /* lisp open bracket */
+
+  pre.prettyprint .opn {
+    color: #ffffff;
+  }
+
+  /* lisp close bracket */
+
+  pre.prettyprint .clo {
+    color: #ffffff;
+  }
+
+  /* markup tag name */
+
+  pre.prettyprint .tag {
+    color: #ff9da4;
+  }
+
+  /* markup attribute name */
+
+  pre.prettyprint .atn {
+    color: #ffc58f;
+  }
+
+  /* markup attribute value */
+
+  pre.prettyprint .atv {
+    color: #99ffff;
+  }
+
+  /* declaration */
+
+  pre.prettyprint .dec {
+    color: #ffc58f;
+  }
+
+  /* variable name */
+
+  pre.prettyprint .var {
+    color: #ff9da4;
+  }
+
+  /* function name */
+
+  pre.prettyprint .fun {
+    color: #bbdaff;
+  }
+}

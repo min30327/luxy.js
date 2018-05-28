@@ -1,8 +1,8 @@
 /*!
- * luxy.js v0.0.7: Animate scrolling to anchor links
+ * luxy.js v0.1.0: Inertia scroll and parallax effect plugin in Vanilla.js
  * (c) 2018 Mineo Okuda
  * MIT License
- * git+ssh://git@github.com:min30327/luxy.git
+ * git+ssh://git@github.com:min30327/luxy.js.git
  */
 
 /**

@@ -14,7 +14,7 @@
 	<div id="luxy">
 		
 		<main id="main">
-            <div id="section01">
+            <div id="section01" class="vh-element" data-props="padding-top,padding-bottom" data-values="45,45">
                 <div id="bg-section01" class="luxy-el bg-section" data-speed-y="40"></div>
 				<div class="content-inner">
 					<div class="d-flex justify-content-center oleo">
@@ -56,16 +56,16 @@
                         </div>
                     </div>
                 </div>
-                <div id="fog01" class="luxy-el" data-speed-y="-5">
+                <div id="fog01" class="luxy-el vh-element" data-speed-y="-5" data-props="bottom" data-values="-30">
                     <img src="test/img/fog01.png" alt="fog">
                 </div>
             </div>
-			<div id="section03">
+			<div id="section03" class="vh-element" data-props="padding-top" data-values="50">
                 <div id="bg-section02" class="luxy-el bg-section" data-speed-y="-10"></div>
             </div>
             <div id="section04">
 
-                <div id="fog02" class="luxy-el" data-speed-y="-5">
+                <div id="fog02" class="luxy-el vh-element" data-speed-y="-5" data-props="bottom" data-values="-50">
                     <img src="test/img/fog01.png" alt="fog02">
                 </div>
                 <div class="container z-depth-2">
@@ -96,7 +96,7 @@
                     </div>
                 </div>
             </div>
-            <div id="section05">
+            <div id="section05" class="vh-element" data-props="padding-top" data-values="50">
                 <div id="bg-section03" class="luxy-el bg-section" data-speed-y="-10"></div>
             </div>
             <div id="section06">
@@ -142,6 +142,7 @@
         </footer>
 	</div>
 	<script src="https://rawgit.com/google/code-prettify/master/loader/run_prettify.js" defer></script>
+    <script src="test/script.js" charset="utf-8"></script>
 	<script src="dist/js/luxy.js" charset="utf-8"></script>
 	<script>
 		luxy.init({

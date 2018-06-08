@@ -158,3 +158,10 @@ html,body{
     text-align: center;
     background: #000;
 }
+
+@media(max-width: 767px){
+        
+    #section02,#section04,#section06{
+        padding: 40px 0;
+    }
+}

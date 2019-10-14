@@ -186,7 +186,22 @@
 					}
 				});
 				
-			}
+			},
+			cancel: function() {
+				cancelAnimationFrame(this.resizeId);
+				cancelAnimationFrame(this.scrollId);
+				this.wrapper.removeAttribute('style');
+				for (var i = 0; i < this.Targets.length; i++) {
+					this.Targets[i].elm.removeAttribute('style');
+				}
+				this.wrapper = '';
+				this.Targets = [];
+				this.windowHeight = 0;
+				this.wapperOffset = 0;
+				this.isResize = false;
+				this.scrollId = "";
+				this.resizeId = "";
+			},
 		};
 
 		

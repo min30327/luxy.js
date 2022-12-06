@@ -39,7 +39,7 @@
     "gulp-footer": "^1.0.5",
     "gulp-header": "^1.8.8",
     "gulp-jshint": "^2.0.4",
-    "gulp-livereload": "^3.8.1",
+    "gulp-livereload": "^4.0.2",
     "gulp-markdown": "^1.2.0",
     "gulp-optimize-js": "^1.1.0",
     "gulp-plumber": "^1.1.0",
